@@ -109,10 +109,24 @@ main{
   margin: 0 auto;
 }
 
+/* section with id skill -  CSS rules */
+#skill {
+  background-color: mintcream;
+  padding: 20px 15px 10px;
+}
+
+#skill h2 {
+  margin: 0;
+}
+
 /* section with id contact -  CSS rules */
 #contact {
   background-color: #FBFCFC;
   padding: 50px 0 20px;
+}
+
+#contact h2 {
+  margin: 0;
 }
 
 #contact p {
@@ -176,6 +190,7 @@ footer {
 
   .hsection1 li {
     background-color: #FBFCFC;
+    font-size: 1.2em;
     margin: 10px;
   }
 
@@ -211,6 +226,7 @@ footer {
     float: left;
     width: 50%;
   }
+
   .card img {
     width: 97%;
   }
@@ -220,8 +236,23 @@ footer {
     margin: 0 auto;
   }
 
+  .detail {
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .detail h3 {
+    width: 60%;
+    margin: 10px auto;
+    background-color: white;
+    border: 3px solid skyblue;
+    color: skyblue;
+    border-radius: 50%;
+    padding: 10px 5px;
+  }
+
   #contact p {
-    width: 70%;
+    width: 95%;
     margin: 0 auto 20px;
   }
 
@@ -243,16 +274,19 @@ footer {
     float: right;
     text-transform: uppercase;
   }
+
   .foot ul {
     padding: 20px 0;
-
   }
 
+  .foot nav li {
+    font-size: .7em;
+  }
 }
 
-/********************************
-  Media queries for tablet size
-*********************************/
+/****************************************
+  Media queries for Desktop screen size
+*****************************************/
 @media (min-width: 1024px) {
   .hsection1 {
     padding-bottom: 5px ;
@@ -287,6 +321,7 @@ footer {
     margin: 0 auto;
     padding: 40px 20px;
   }
+
   #portfolio {
       background-image: url("../images/background.jpg");
       border: 1px solid lightgray;
@@ -330,6 +365,28 @@ footer {
   .shade p {
     width: 100%;
     padding: 5px 10px;
+  }
+
+  #skill {
+    margin: 20px 0 0;
+    padding-top: 20px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+  }
+
+  #skill h2 {
+    font-size: 3em;
+    color: black;
+  }
+
+  .detail {
+    width: 33%;
+    float: left;
+  }
+
+  .detail p {
+    width: 85%;
+    margin: 0 auto;
   }
 
   #contact h2 {
