@@ -9,7 +9,7 @@
   <link type="text/css" rel="stylesheet" href="./css/style.css">
   <body>
     <header>
-      <div class="hsection1">
+      <div class="hsection1 floatfix">
         <h1>Student Name</h1>
         <nav>
           <ul>
@@ -20,49 +20,65 @@
         </nav>
       </div>
 
-      <div class="hsection2">
-        <img src="./images/responsive-layout-profile.png" alt="Responsive Layout Profile image">
-        <p>Hi, I am a Front End Developer, who loves responsive design and css. I recently finished a degree in Front-End Web Development at Treehouse, and I am so excited to put all my skills to use!</p>
+      <div class="hsection2 floatfix">
+        <div class="right">
+          <img src="./images/responsive-layout-profile.png" alt="Responsive Layout Profile image">
+        </div>
+        <div class="left">
+          <p>Hi, I am a front-end developer, who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse, and I am so excited to put all my skills to use!</p>
+        </div>
       </div>
     </header>
 
     <main>
-      <div id="portfolio">
+      <div id="portfolio" class="floatfix">
         <h2>Portfolio</h2>
         <div class="card">
           <img src="./images/portfolio-1.png" alt="My Portfolio image 1">
-          <h3>Marketing Page</h3>
-          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+          <div class="shade">
+            <h3>Marketing Page</h3>
+            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/portfolio-2.png" alt="My Portfolio image 2">
-          <h3>Search Page</h3>
-          <p>This project searchs through a specific database to find information that the user is trying to look up.</p>
+          <div class="shade">
+            <h3>Search Page</h3>
+            <p>This project searchs through a specific database to find information that the user is trying to look up.</p>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/portfolio-3.png" alt="My Portfolio image 3">
-          <h3>Travel App</h3>
-          <p>This project compares travel times based on different transporation methods, and tells you the best one.</p>
+          <div class="shade">
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different transporation methods, and tells you the best one.</p>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/portfolio-4.png" alt="My Portfolio image 4">
-          <h3>Map of Favorite Spots</h3>
-          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          <div class="shade">
+            <h3>Map of Favorite Spots</h3>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/portfolio-5.png" alt="My Portfolio image 5">
-          <h3>Photo Gallery</h3>
-          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          <div class="shade">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/portfolio-6.png" alt="My Portfolio image 6">
-          <h3>Calculator</h3>
-          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+          <div class="shade">
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+          </div>
         </div>
       </div>
 
@@ -75,7 +91,7 @@
     </main>
 
     <footer>
-      <div class="foot">
+      <div class="foot floatfix">
         <span>Student name</span>
         <span><a href="index.html">Back to top</a></span>
         <nav>

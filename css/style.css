@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Oregano', cursive;
+  color: slategray;
 }
 
 html {
@@ -12,8 +13,9 @@ html {
 }
 
 a {
+  font-family: 'Abril Fatface', cursive;
   text-decoration: none;
-  color: #000;
+  color: dimgray;
 }
 
 a:hover {
@@ -29,6 +31,12 @@ h3 {
 
 p {
   font-size: 1.2em;
+}
+
+.floatfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*******************************
@@ -47,6 +55,7 @@ h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 1.8em;
   letter-spacing: 2px;
+  color: black;
   margin: 0;
   padding: 20px 0;
 }
@@ -69,8 +78,13 @@ h1 {
   width: 60%;
 }
 
+.left {
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
 .hsection2 p {
-  padding: 0 20px;
+  margin: 0;
 }
 
 /*****************************
@@ -78,6 +92,10 @@ h1 {
  *****************************/
 main{
  margin: 40px auto 0;
+}
+
+#portfolio h2 {
+  margin: 0;
 }
 
 /* section with class card -  CSS rules */
@@ -97,13 +115,13 @@ main{
   padding: 50px 0 20px;
 }
 
+#contact p {
+  padding: 0 20px 5px;
+}
+
 span {
   font-weight: bold;
   padding: 0 10px;
-}
-
-#contact p {
-  padding: 0 20px 5px;
 }
 
 /*******************************
@@ -111,7 +129,7 @@ span {
  *******************************/
 footer {
   background-color: #FBFCFC;
-  padding: 50px 0 0;
+  padding-top: 50px;
 }
 
 .foot {
@@ -120,12 +138,11 @@ footer {
   border-top: 1px solid lightgray;
 }
 
-.foot nav {
-  display: none;
-}
-
 .foot span {
-  font-size: .8em;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  font-size: .9em;
+  color: dimgray;
   padding: 20px 10px;
 }
 
@@ -139,8 +156,187 @@ footer {
   text-transform: uppercase;
 }
 
-.foot::after {
-  content: "";
-  display: table;
-  clear: both;
+.foot nav {
+  display: none;
+}
+
+/********************************
+  Media queries for tablet size
+*********************************/
+@media (min-width: 768px) {
+  nav ul,
+  nav li {
+    display: inline-block;
+  }
+
+  /* header css rules */
+  h1 {
+    font-size: 2em;
+  }
+
+  .hsection1 li {
+    background-color: #FBFCFC;
+    margin: 10px;
+  }
+
+  a {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  a:hover {
+    background-color: dimgray;
+    color: white;
+  }
+
+  .right img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .right {
+    float: right;
+    width: 40%;
+  }
+
+  .left {
+    float: left;
+    width: 60%;
+    margin: 0;
+    text-align: left;
+  }
+
+  /* main css rules */
+  .card {
+    float: left;
+    width: 50%;
+  }
+  .card img {
+    width: 97%;
+  }
+
+  .card p {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #contact p {
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+
+  #contact p:nth-child(5n+2) {
+    margin-bottom: 40px;
+  }
+
+  /* footer css rules */
+  .foot {
+    width: 97%;
+  }
+
+  .foot span:nth-child(even) {
+    display: none;
+  }
+
+  .foot nav {
+    display: block;
+    float: right;
+    text-transform: uppercase;
+  }
+  .foot ul {
+    padding: 20px 0;
+
+  }
+
+}
+
+/********************************
+  Media queries for tablet size
+*********************************/
+@media (min-width: 1024px) {
+  .hsection1 {
+    padding-bottom: 5px ;
+    background-color: #99F1DE;
+  }
+
+  .hsection1 h1 {
+    float: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 10px 20px 0;
+    letter-spacing: normal;
+  }
+
+  .hsection1 nav {
+    float: right;
+  }
+
+  .hsection1 li {
+    font-size: 1em;
+    margin: 10px 0 0;
+    background-color: #99F1DE;
+  }
+
+  .left {
+    padding: 0 30px 0 20px;
+    text-align: justify;
+  }
+
+  main {
+    background-color: #FBFCFC;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  #portfolio {
+      background-image: url("../images/background.jpg");
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      margin: 0 auto;
+      padding: 40px 10px 20px;
+  }
+
+  #portfolio h2 {
+    font-size: 3em;
+    color: black;
+  }
+
+  .card {
+    width: 33%;
+  }
+
+  .card img {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    color: black;
+    font-size: 1.8em;
+  }
+
+  .shade {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0;
+    background-color: #F9FDFC;
+    border-radius: 10px;
+    opacity: .75;
+  }
+
+  .shade h3 {
+    margin: 5px 0 15px;
+  }
+
+  .shade p {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  #contact h2 {
+    font-size: 3em;
+  }
+
+  a:hover {
+    color: #99F1DE;
+  }
 }
